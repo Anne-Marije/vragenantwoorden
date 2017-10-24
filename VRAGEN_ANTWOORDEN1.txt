@@ -1,0 +1,57 @@
+1. Wat is een url?
+Uniform Resource Location - Webadres dat je in de browser kan intypen, en dat brengt je bij een locale of remote server.
+
+2. Ik heb een bestand vertalen.php staan in de map: doorgeven, die in de map: htdocs staat die in de map xampp staat.
+Wat moet ik in de browser intypen om dit bestand aan te spreken?
+http://localhost/doorgeven/vertalen.php
+127.0.0.1/doorgeven/vertalen.php
+
+3. Met welke tag open ik het php script, en met welke sluit ik het af.
+<?php
+
+
+?>
+4. Noem 3 voorbeelden van operators en leg uit wat ze doen.
+/    Arythmic operator, die deelt var x door var y in geval van $x / $y
++  Arythmic operator, die telt var x bij var y op: bijvoorbeeld $x + $y
+-  Arythmic operator, die trekt var x van var y af: bijvoorbeeld $y - $x
+
+
+5. Op welk systeem draait javascript en waar is het verantwoordelijk voor?
+Het draait op de client kant en het is verantwoordelijk voor de interactiviteit/ intelligentie aan de client kant. Javascript is een programmeertaal.
+
+6. Waar staat html voor?
+Hyper Text Markup Language
+Het is een opmaak-taal, GEEN programmeertaal die met behulp van tags aangeeft of iets een paragraaf is, of een header. 
+
+7. Programmeer in code met behulp van if-statements een programma voor een stoplicht.
+Groen is rijden, rood is stoppen, oranje is stoppen tenzij je dichterbij bent dan 15 meter.
+<?php    
+    $stoplicht = "geel";   // Altijd een string als het een menselijk woord is  met "".
+    $afstand = 2;          // Dit is een getal, dit hoeft niet tussen ""
+    
+    if($stoplicht == "rood"){    // LET OP dubble = tekens
+        echo "stoppen";
+    }else{
+        if($afstand > 15 and $stoplicht == "geel"){
+            echo "stoppen";
+        }else{
+            echo "doorrijden";
+        }
+?>
+
+
+
+8. Welke waarden kan een boolean hebben.
+///////	waar of niet-waar
+true of false
+0 1 -1 null NULL
+
+9. Geef het waarheidstabel van xor.
+false false = false
+true true = false
+false true = true
+true false = true
+
+10. Verzin een leuke vraag voor je buurman?
+Wat is full stack web-developer?
